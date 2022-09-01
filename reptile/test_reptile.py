@@ -1,12 +1,16 @@
 #!/usr/bin/env python
 # _*_ coding:utf-8 _*_
 import random
-import ssl
+import ssl,os
+import sys
+BASE_PATH = os.path.dirname(os.path.dirname(__file__))
+sys.path.append(BASE_PATH)
 import time
 from urllib import request, parse
 
 from Tool.tool import random_ua
 from reptile.zhibo_reptile import test_csdn
+
 
 ssl._create_default_https_context = ssl._create_unverified_context
 """
