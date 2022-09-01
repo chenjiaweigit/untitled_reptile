@@ -10,7 +10,7 @@ from urllib import request
 from urllib import parse
 
 import requests
-from bs4 import BeautifulSoup
+# from bs4 import BeautifulSoup
 
 from Tool.tool import random_ua
 context = ssl._create_unverified_context()
